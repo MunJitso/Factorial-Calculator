@@ -21,7 +21,7 @@ public class FactorialCalculator {
     }
 
     public static void main(String[] args) {
-        System.out.print("enter a number: ");
+        System.out.print("Enter a number: ");
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
         int[] list = new int[input];
