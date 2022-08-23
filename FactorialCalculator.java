@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FactorialCalculator {
+public class Main {
     public static int factorialCalculator(int number, int[] list){
         if(!(number <= 0)) {
             int i = 0;
@@ -8,15 +8,11 @@ public class FactorialCalculator {
                 if (list[i] == 0) {
                     list[i] = number;
                     factorialCalculator(number - 1, list);
-                } else {
-                    i++;
-                }
+                } else i++;
             }
         }
         int total = 1;
-        for (int num: list) {
-            total *= num;
-        }
+        for (int num: list) total *= num;
         return total;
     }
 
@@ -27,6 +23,5 @@ public class FactorialCalculator {
         int[] list = new int[input];
 
         System.out.println(factorialCalculator(input, list));
-
     }
 }
